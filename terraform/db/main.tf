@@ -44,14 +44,14 @@ module "aurora" {
 
   aurora_cluster_enabled             = true
   aurora_cluster_name                = var.name
-  enhanced_monitoring_name           = "${var.namespace}-${var.environment}-enhanced-monitoring"
+  enhanced_monitoring_name           = "${var.namespace}-${var.environment}-enhanced-monitoring-saurav"
   aurora_db_admin_username           = var.db_admin_username
   aurora_db_name                     = var.name
   aurora_allow_major_version_upgrade = false
   aurora_auto_minor_version_upgrade  = true
   aurora_cluster_size                = var.cluster_size
   aurora_instance_type               = "db.serverless"
-  aurora_subnets                     = data.aws_subnets.private.ids
+  aurora_subnets                     = ["subnet-039a483868df1e5b9","subnet-08fd1fedb1c3a5812"]
   aurora_security_groups             = var.aurora_security_groups
   aurora_allowed_cidr_blocks         = [data.aws_vpc.vpc.cidr_block]
 
