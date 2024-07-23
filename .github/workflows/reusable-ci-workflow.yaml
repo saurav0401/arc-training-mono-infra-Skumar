@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install AWS CLI
-        run: ./scripts/dependencies/install-aws-cli.sh
+        run: chmod +x ./scripts/dependencies/install-aws-cli.sh
         continue-on-error: false
 
         #get aws credentials for backend
