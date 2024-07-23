@@ -1,5 +1,5 @@
 region         = "us-east-1"
 key            = "arc-training-debash/db/terraform.tfstate"
-bucket         = "arc-training-sf"
-dynamodb_table = "arc-training-sf"
+bucket         = "arc-training-sf-saurav-04012000"
+dynamodb_table = "arc-training-sf-saurav"
 encrypt        = true
